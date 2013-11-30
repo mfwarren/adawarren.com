@@ -1,0 +1,6 @@
+indexes:
+  tag: 'tags'
+  group: 'groups'
+  post: "posts"
+baseurl: 'http://adawarren.com'
+...

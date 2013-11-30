@@ -1,0 +1,20 @@
+{{ template "chrome/header.html" . }}
+
+<section id="main">
+
+  {{ range first 10 .Site.Indexes.groups.posts.Pages }}
+
+  <div class="post">
+      <small class="caps">{{ .Date.Format "Mon, 02 Jan 2006"  }}</small>       
+      <h1>
+        <a href="{{ .Permalink}}"> {{ .LinkTitle }} </a>
+      </h1>
+      
+      <div class="entry">
+      {{ .Content }}
+      </div>
+  </div>
+  {{ end }}
+</section>
+
+{{ template "chrome/footer.html" . }}
